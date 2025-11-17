@@ -53,8 +53,8 @@ function App() {
     return (
       <div className="game-container">
         <div className="question-box">
-          <h1>Välj Quiz Ämne</h1>
-          <p className="subtitle">Välj vilket område du vill testa dina kunskaper på</p>
+          <h1>Välj Ämne</h1>
+          <p className="subtitle">Vad vill du öva på idag?</p>
           <div className="topic-grid">
             {Object.entries(quizTopics).map(([key, topic]) => (
               <button

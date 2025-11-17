@@ -1,3 +1,4 @@
+// 0 1 2 3 4
 export const questionsDatabase = [
   {
   "question": "När får en polis använda våld enligt svensk lag?",

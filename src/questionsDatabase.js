@@ -87,7 +87,7 @@ export const questionsDatabase = [
     "Endast om personen erkänner",
     "Endast vid allvarlig sjukdom"
   ],
-  "correct": 1
+  "correct": 0
 },
 {
   "question": "Vad är syftet med omhändertagande enligt LOB?",

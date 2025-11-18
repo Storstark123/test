@@ -197,3 +197,167 @@
 .back-btn:hover {
   background-color: #4b5563;
 }
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .question-box {
+    padding: 25px;
+    border-radius: 15px;
+    width: 95%;
+  }
+
+  .question-box h1 {
+    font-size: 1.5rem;
+    margin: 0 0 20px 0;
+  }
+
+  .question-box h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .question {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+
+  .answers {
+    gap: 12px;
+    margin: 20px 0;
+  }
+
+  .answer-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+
+  .topic-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .topic-card {
+    max-width: 100%;
+    padding: 25px;
+  }
+
+  .topic-card h3 {
+    font-size: 1.3rem;
+    margin: 0 0 12px 0;
+  }
+
+  .topic-card p {
+    font-size: 0.95rem;
+  }
+
+  .score {
+    font-size: 1rem;
+  }
+
+  .result-message {
+    font-size: 1rem;
+  }
+
+  .next-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+
+  .back-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .question-box {
+    padding: 18px;
+    border-radius: 12px;
+    width: 98%;
+  }
+
+  .question-box h1 {
+    font-size: 1.3rem;
+    margin: 0 0 15px 0;
+  }
+
+  .question-box h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .question {
+    font-size: 1.1rem;
+    margin: 15px 0;
+  }
+
+  .answers {
+    gap: 10px;
+    margin: 15px 0;
+  }
+
+  .answer-btn {
+    padding: 10px 15px;
+    font-size: 0.95rem;
+    border-radius: 6px;
+  }
+
+  .answer-btn:hover {
+    transform: translateY(-1px);
+  }
+
+  .topic-grid {
+    padding: 0 10px;
+    gap: 12px;
+  }
+
+  .topic-card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .topic-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .topic-card p {
+    font-size: 0.9rem;
+  }
+
+  .result-box {
+    padding: 15px;
+    margin: 15px 0;
+  }
+
+  .result-box.correct h2,
+  .result-box.wrong h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .score {
+    font-size: 0.95rem;
+    margin-top: 15px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .next-btn {
+    padding: 10px 25px;
+    font-size: 0.95rem;
+    margin-top: 15px;
+  }
+
+  .back-btn {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+  }
+}
+

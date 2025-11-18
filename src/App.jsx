@@ -12,9 +12,11 @@ function App() {
 
   useEffect(() => {
     if (selectedTopic) {
-      // Shuffle questions when topic is selected
-      const shuffled = [...quizTopics[selectedTopic].questions].sort(() => Math.random() - 0.5)
-      setQuestions(shuffled)
+      // Get all questions, shuffle them, and take only 10
+      const allQuestions = quizTopics[selectedTopic].questions
+      const shuffled = [...allQuestions].sort(() => Math.random() - 0.5)
+      const selected = shuffled.slice(0, 10)
+      setQuestions(selected)
     }
   }, [selectedTopic])
 
@@ -54,7 +56,6 @@ function App() {
       <div className="game-container">
         <div className="question-box">
           <h1>Välj Ämne</h1>
-          <p className="subtitle">Vad vill du öva på idag?</p>
           <div className="topic-grid">
             {Object.entries(quizTopics).map(([key, topic]) => (
               <button
@@ -64,7 +65,6 @@ function App() {
               >
                 <h3>{topic.title}</h3>
                 <p>{topic.description}</p>
-                <span className="question-count">{topic.questions.length} frågor</span>
               </button>
             ))}
           </div>

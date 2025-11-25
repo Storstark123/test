@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import { quizTopics } from './quizTopics'
+import MemoryGame from './MemoryGame'
 
 function App() {
   const [selectedTopic, setSelectedTopic] = useState(null)
@@ -9,16 +10,17 @@ function App() {
   const [showResult, setShowResult] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
   const [questions, setQuestions] = useState([])
+  const [gameMode, setGameMode] = useState(null) // 'quiz' or 'memory'
 
   useEffect(() => {
-    if (selectedTopic) {
+    if (selectedTopic && gameMode === 'quiz') {
       // Get all questions, shuffle them, and take only 10
       const allQuestions = quizTopics[selectedTopic].questions
       const shuffled = [...allQuestions].sort(() => Math.random() - 0.5)
       const selected = shuffled.slice(0, 10)
       setQuestions(selected)
     }
-  }, [selectedTopic])
+  }, [selectedTopic, gameMode])
 
   const handleAnswer = (index) => {
     const correct = index === questions[currentQuestion].correct
@@ -44,10 +46,24 @@ function App() {
   }
 
   const selectTopic = (topicKey) => {
-    setSelectedTopic(topicKey)
-    setCurrentQuestion(0)
-    setScore(0)
-    setShowResult(false)
+    if (topicKey === 'memory') {
+      setSelectedTopic(topicKey)
+      setGameMode('memory')
+    } else {
+      setSelectedTopic(topicKey)
+      setCurrentQuestion(0)
+      setScore(0)
+      setShowResult(false)
+      setGameMode('quiz')
+    }
+  }
+
+  // If memory game is selected, show the memory game component
+  if (selectedTopic === 'memory' && gameMode === 'memory') {
+    return <MemoryGame onBack={() => {
+      setSelectedTopic(null)
+      setGameMode(null)
+    }} />
   }
 
   // Show topic selection if no topic is selected
@@ -73,7 +89,7 @@ function App() {
     )
   }
 
-  if (questions.length === 0) {
+  if (gameMode === 'quiz' && questions.length === 0) {
     return <div className="game-container"><div className="question-box">Loading...</div></div>
   }
 

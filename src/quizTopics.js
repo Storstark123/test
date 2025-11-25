@@ -292,5 +292,86 @@ export const quizTopics = {
         correct: 1
       }
     ]
+  },
+  memory: {
+    title: "Minne",
+    description: "Testa ditt minne med frågor om fakta och detaljer",
+    questions: [
+      {
+        question: "Hur många dagar har året 2024?",
+        answers: ["364", "365", "366", "367"],
+        correct: 2
+      },
+      {
+        question: "Vad är huvudstaden i Australien?",
+        answers: ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+        correct: 2
+      },
+      {
+        question: "Hur många håll har ett schackbräde?",
+        answers: ["60", "62", "64", "66"],
+        correct: 2
+      },
+      {
+        question: "Vem målade Mona Lisa?",
+        answers: ["Michelangelo", "Leonardo da Vinci", "Raphael", "Donatello"],
+        correct: 1
+      },
+      {
+        question: "Hur många kontinenter finns det?",
+        answers: ["5", "6", "7", "8"],
+        correct: 2
+      },
+      {
+        question: "Vad är världens största hav?",
+        answers: ["Atlanten", "Indiska oceanen", "Stilla havet", "Ishavet"],
+        correct: 2
+      },
+      {
+        question: "Hur många ben har en spindel?",
+        answers: ["6", "8", "10", "12"],
+        correct: 1
+      },
+      {
+        question: "Vilken planet är närmast solen?",
+        answers: ["Venus", "Merkurius", "Mars", "Jorden"],
+        correct: 1
+      },
+      {
+        question: "Hur många färger har en regnbåge?",
+        answers: ["5", "6", "7", "8"],
+        correct: 2
+      },
+      {
+        question: "Vad är världens högsta berg?",
+        answers: ["K2", "Mount Everest", "Kangchenjunga", "Lhotse"],
+        correct: 1
+      },
+      {
+        question: "Hur många strängar har en gitarr?",
+        answers: ["4", "5", "6", "7"],
+        correct: 2
+      },
+      {
+        question: "Vilken är världens största stad efter befolkning?",
+        answers: ["New York", "Tokyo", "Delhi", "Shanghai"],
+        correct: 1
+      },
+      {
+        question: "Hur många skelettben har en vuxen människa?",
+        answers: ["186", "206", "226", "246"],
+        correct: 1
+      },
+      {
+        question: "Vilket år fälldes gränsen mellan Österrike-Ungern?",
+        answers: ["1914", "1918", "1920", "1925"],
+        correct: 1
+      },
+      {
+        question: "Hur många muskler har människan ungefär?",
+        answers: ["400", "500", "600", "700"],
+        correct: 2
+      }
+    ]
   }
 }

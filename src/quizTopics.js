@@ -373,5 +373,10 @@ export const quizTopics = {
         correct: 2
       }
     ]
+  },
+  suika: {
+    title: "Suika Game",
+    description: "Juego de frutas: combina frutas iguales para obtener otras más grandes",
+    questions: [] // No preguntas, es un juego
   }
 }

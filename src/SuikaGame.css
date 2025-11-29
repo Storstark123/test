@@ -1,0 +1,78 @@
+.suika-box {
+  background-color: rgba(255, 255, 255, 0.575);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  max-width: 450px;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.suika-box h1 {
+  color: #0c366e71;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+.suika-instructions {
+  color: #0c4a6e;
+  font-size: 1rem;
+  margin: 10px 0 20px 0;
+  font-weight: 500;
+}
+
+.suika-canvas {
+  border: 3px solid #0369a1;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 15px rgba(3, 105, 161, 0.3);
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .suika-box {
+    padding: 25px;
+    max-width: 100%;
+  }
+
+  .suika-box h1 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+  }
+
+  .suika-instructions {
+    font-size: 0.9rem;
+  }
+
+  .suika-canvas {
+    margin: 0 auto 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .suika-box {
+    padding: 18px;
+  }
+
+  .suika-box h1 {
+    font-size: 1.3rem;
+    margin: 12px 0;
+  }
+
+  .suika-instructions {
+    font-size: 0.85rem;
+  }
+
+  .suika-canvas {
+    margin: 0 auto 12px;
+  }
+}

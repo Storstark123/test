@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import { quizTopics } from './quizTopics'
 import MemoryGame from './MemoryGame'
-import SuikaGame from './SuikaGame'
+import DuckHuntingGame from './SuikaGame'
 
 function App() {
   const [selectedTopic, setSelectedTopic] = useState(null)
@@ -72,7 +72,7 @@ function App() {
 
   // If Suika game is selected, show the Suika game component
   if (selectedTopic === 'suika' && gameMode === 'suika') {
-    return <SuikaGame onBack={() => {
+    return <DuckHuntingGame onBack={() => {
       setSelectedTopic(null)
       setGameMode(null)
     }} />

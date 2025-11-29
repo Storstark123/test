@@ -375,8 +375,8 @@ export const quizTopics = {
     ]
   },
   suika: {
-    title: "Suika Game",
-    description: "Juego de frutas: combina frutas iguales para obtener otras más grandes",
-    questions: [] // No preguntas, es un juego
+    title: "Andskjutning",
+    description: "Skjut andarna som flyger omkring! Du har 30 sekunder.",
+    questions: [] // Ingen quiz, det är ett spel
   }
 }

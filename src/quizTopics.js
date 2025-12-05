@@ -373,10 +373,5 @@ export const quizTopics = {
         correct: 2
       }
     ]
-  },
-  suika: {
-    title: "Andskjutning",
-    description: "Skjut andarna som flyger omkring! Du har 30 sekunder.",
-    questions: [] // Ingen quiz, det är ett spel
   }
 }

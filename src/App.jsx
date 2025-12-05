@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import { quizTopics } from './quizTopics'
 import MemoryGame from './MemoryGame'
-import DuckHuntingGame from './SuikaGame'
 
 function App() {
   const [selectedTopic, setSelectedTopic] = useState(null)
@@ -50,9 +49,6 @@ function App() {
     if (topicKey === 'memory') {
       setSelectedTopic(topicKey)
       setGameMode('memory')
-    } else if (topicKey === 'suika') {
-      setSelectedTopic(topicKey)
-      setGameMode('suika')
     } else {
       setSelectedTopic(topicKey)
       setCurrentQuestion(0)
@@ -65,14 +61,6 @@ function App() {
   // If memory game is selected, show the memory game component
   if (selectedTopic === 'memory' && gameMode === 'memory') {
     return <MemoryGame onBack={() => {
-      setSelectedTopic(null)
-      setGameMode(null)
-    }} />
-  }
-
-  // If Suika game is selected, show the Suika game component
-  if (selectedTopic === 'suika' && gameMode === 'suika') {
-    return <DuckHuntingGame onBack={() => {
       setSelectedTopic(null)
       setGameMode(null)
     }} />
